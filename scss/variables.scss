@@ -1,0 +1,116 @@
+
+// ==============================================================
+// ## Base
+
+//== Colors
+$body-bg: #ffffff;
+$primary-base: #8d6e63;
+$primary-base-daker: #795548;
+$secondary-base: #585858;
+$profile-bg: #443e34;
+$profile-bg-darker: #3e3830;
+$gray: #bcbcbc;
+$light-gray: #ededed;
+$white: #fff;
+$link-color : #333333;
+
+
+//== font-families
+//
+$font-path    : '../fonts';
+$font-numbers : Myriad Pro, Arial, sans-serif;
+$fa : FontAwesome;
+
+
+//== images path
+$img-path    : '../images';
+ 
+//== Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+/* arabic */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/Lato-Light.ttf');
+}
+
+
+		$font-size : 16px !default;
+		$line-height : 1.6 !default;
+
+
+//Headings size
+$font-size-h1 : 2.25rem;	// ~36px
+$font-size-h2 : 1.875rem;	// ~30px
+$font-size-h3 : 1.5rem;		// ~24px
+$font-size-h4 : 1.125rem;	// ~18px
+$font-size-h5 : 1rem;		// ~16px
+$font-size-h6 : 0.75rem;	// ~12px
+$font-size-p : 1rem;		// ~15px
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  320px !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+
+// Large screen / desktop
+$screen-lg:                  1200px !default;
+
+// Large screen / wide 
+$screen-wd:					1600px !default;
+
+
+//== Breadcrumb
+//
+//##
+
+			$breadCrumb-bg : transparent;
+	$breadcrumb-link-color : rgba(255, 255, 255, 0.73);
+ $breadcrumb-current-color : #fff;
+
+
+
+$subsiteHeader-bg		: #f8f9f9;
+
+
+
+
+
+// ##
+$youtubeClr			: #dd4b39;
+$twitterClr			: #00bbf2;
+$facebookClr		: #415f9b;
+$linkedinClr		: #007bb6;
+$instagramClr	: #517fa4;
+$goolepClr : #e3401d;
+
+@function rem($size) {
+  $remSize: $size / 10;
+  @return #{$remSize}rem;
+}

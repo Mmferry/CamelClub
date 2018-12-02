@@ -1,0 +1,381 @@
+@import 'variables.scss';
+@import '_utlites.scss';
+
+body {
+    font-family: 'Lato';
+    font-size: rem(14);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: url('../images/box-memories.jpg');
+    background-size: auto;
+}
+
+.wrapper{
+    background: rgba(141, 110, 99, 0.2);
+    height: 100vh;
+    &.profile{
+        height: auto;
+    }
+}
+
+header{
+    background: $primary-base;
+    height: rem(60);
+    .logo{
+        color: $white;
+        font-size: $font-size-h1;
+        font-family: 'Lato-Bold';
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .lang{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: rem(14);
+        color: $white;
+    }
+}
+
+.landing-page{
+    text-align: center;
+    .col{
+        margin-top: 20%;
+    }
+    .btn, input, textarea{
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        text-transform: uppercase;
+        border-radius: rem(20);
+        border: 0;
+        margin-bottom: rem(20);
+        width: 100%;
+    }
+    .title{
+        color: $white;
+        font-size: $font-size-h1;
+        font-family: 'Lato-Bold';
+        margin-bottom: rem(30);
+    }
+    @at-root{
+        .rights{
+            color: #8a8786;
+            font-size: rem(16);
+        }
+    }
+    input, textarea{
+        padding-left: rem(15);
+        padding-right: rem(15);
+        outline: 0;
+        font-size: rem(12);
+        width: 100%;
+        border: 1px solid #ddd;
+        resize: none
+    }
+    .checkbox{
+        float: left;
+        margin-top: 0;
+    }
+    .form-link{
+        color: #fac5b3;
+        float: right;
+        text-decoration: underline;
+    }
+    .social-media{
+        color: $white;
+        .social-media_list{
+            a{
+                width: rem(35);
+                height: rem(35);
+                line-height: rem(35);
+                display: inline-block;
+                border-radius: 100%;
+                color: $white;
+                font-size: rem(20);
+                &.facebook{background: $facebookClr;}
+                &.twitter{background: $twitterClr}
+                &.instagram{background: $instagramClr}
+                &.googleplus{background: $goolepClr}
+            }
+        }
+    }
+}
+
+.footer{
+    text-align: center;
+    text-transform: capitalize;
+    //height: rem(50);
+    margin-top: rem(50);
+}
+
+//profile page
+
+.header-profile{
+    .logo{
+        text-align: left;
+    }
+    .header-search{
+        background: $white;
+        border-radius: rem(10);
+        margin-top: rem(15);
+        padding-left: rem(8);
+        display: flex;
+        position: relative;
+        .icon-btn{
+            color: rgba($primary-base, .6);
+        }
+        input{
+            border: 0;
+            outline: 0;
+            padding: rem(5);
+        }
+        .select{
+            position: absolute;
+            right: -1px;
+            top: -1px;
+           select{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                text-transform: capitalize;
+            } 
+        }   
+    }
+    .header-controls{
+        margin-top: rem(15);
+        li>a{
+            color: $white;
+            font-size: rem(20);
+        }
+        .dropdown > a{
+            color: $white;
+            font-size: rem(20);
+        }
+        .open>.dropdown-menu{
+            right: 0;
+            left: auto;
+            a{
+                font-size: rem(14);
+                color: $primary-base;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.profile-img{
+    background: url('../images/box-memories.jpg');
+    background-size: auto;
+    height: rem(400);
+    position: relative;
+    text-align: center;
+    padding-top: rem(70);
+    text-transform: capitalize;
+    color: $white;
+    &:before{
+        content: "";
+        background: rgba(141, 110, 99, 0.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    img{
+        height: rem(160);
+        width: rem(160);
+        border: 2px solid $white;
+        z-index: 1;
+        position: relative;
+    }
+    h1, span{
+        z-index: 1;
+    }
+}
+
+.profile{
+    background: $profile-bg;
+    padding-top: rem(35);
+    padding-bottom: rem(35);
+    .new-post{
+        margin-bottom: rem(60);
+        p{
+            color: $link-color;
+            font-size: rem(16);
+            text-transform: capitalize;
+        }
+        .post{
+            position: relative;
+            textarea{
+                width: 100%;
+                height: rem(100);
+                padding: rem(20) rem(15);
+                border-radius: rem(20);
+                resize: none;
+                border: 1px solid #ddd;
+                outline: 0;
+            }
+            .upload-img{
+                position: absolute;
+                bottom: rem(20);
+                right: rem(20);
+                color: $gray;
+                font-size: rem(18);
+                cursor: pointer;
+            }
+        }
+        .checkbox{
+            label{
+                color: $profile-bg;
+                font-family: 'Lato-bold'
+            }
+        }
+        .btn{
+            width: rem(140);
+            height: rem(40);
+            background: $profile-bg-darker;
+            border-radius: rem(20);
+            font-size: rem(20);
+            &:hover{
+                background: $primary-base;
+                color: $white !important;
+            }
+        }
+    }
+    .profile-memories{
+        background: $white;
+        padding: rem(50) rem(40) rem(0);
+        border-radius: rem(20);
+        .profile-memories--text{
+            color: $link-color;
+        }
+        .profile-memories--img{
+            margin-top: rem(20);
+            height: rem(290);
+        }
+        .share-memorey{
+            margin-top: rem(30);
+            margin-bottom: rem(30);
+            padding-bottom: rem(20);
+            border-bottom: rem(1) solid #ddd;
+            color: $profile-bg;
+            .likes{
+                margin-right: rem(20);
+                span{
+                    cursor: pointer;
+                }
+            }
+            .share{
+                font-family: 'Lato-Bold';
+                a{
+                    color: $white;
+                    margin-left: rem(10);
+                    i{
+                        width: rem(20);
+                        height: rem(20);
+                        line-height: rem(20);
+                        text-align: center;
+                        border-radius: 100%;
+                        &.facebook{
+                            background: $facebookClr;
+                        }
+                        &.twitter{
+                            background: $twitterClr;
+                        }
+                    }
+                }
+            }
+            .date{
+                color: $gray;
+                font-size: rem(12);
+            }
+        }
+    }
+    .profile-info{
+        background: $profile-bg-darker;
+        padding: rem(50) rem(40);
+        border-radius: rem(20);
+        .profile-info--activity{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            color: $white;
+            margin-bottom: rem(40);
+            button{
+                font-size: rem(20);
+                margin-bottom: rem(5);
+            }
+            span{
+                display: block;
+                font-family: 'Lato-bold';
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+        }
+    }
+    .profile-info--personal{
+        text-align: center;
+        color: $white;
+        font-family: 'Lato-bold';
+        text-transform: capitalize;
+        h2{
+            margin-top: rem(0);
+            font-weight: bold;
+        }
+        .btn-edit{
+            margin-top: rem(30);
+            padding: rem(15) rem(20);
+            border-radius: rem(20);
+            text-transform: capitalize;
+            font-family: 'Lato-bold';
+            font-weight: bold;
+            color: $profile-bg;
+            i{
+                margin-right: rem(10);
+            }
+        }
+        .fb-account{
+            color: $white;
+            i{
+                margin-right: rem(5);
+            }
+        }
+        .bio{
+            color: $gray;
+        }
+    }
+}
+
+.list-likes{
+    li{
+        margin-bottom: rem(10);
+    }
+    a{
+        display: inline-block;
+        color: $primary-base;
+    }
+    img{
+        width: rem(50);
+        height: rem(50);
+        background: $light-gray;
+        display: inline-block;
+        margin-right: rem(10);
+    }
+}
+
+.list-notification{
+    li{
+        margin-bottom: rem(10);
+        a{
+            display: inline-block;
+            color: $primary-base;
+        }
+        img{
+            width: rem(30);
+            height: rem(30);
+            background: $light-gray;
+            display: inline-block;
+            margin-right: rem(10);
+        }
+    }
+}
