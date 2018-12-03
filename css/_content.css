@@ -1,0 +1,72 @@
+.intro .intro-logo {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center; }
+  .intro .intro-logo img {
+    margin: auto; }
+
+.award {
+  position: relative;
+  padding-bottom: 50px; }
+  .award .swiper-container {
+    margin-bottom: 30px;
+    margin: auto; }
+    .award .swiper-container .award-title {
+      background: rgba(255, 255, 255, 0.2);
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .award .swiper-container .award-title h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: 'Cairo-Bold';
+        text-align: center; }
+        .award .swiper-container .award-title h2 a {
+          color: #ffffff;
+          font-size: 20px;
+          text-decoration: none; }
+    .award .swiper-container .award-img {
+      height: 300px; }
+      .award .swiper-container .award-img img {
+        height: 100%; }
+    .award .swiper-container .swiper-button-next {
+      background: none;
+      font: normal normal normal 14px/1 FontAwesome;
+      color: #ffffff;
+      font-size: 30px;
+      left: 0px; }
+      .award .swiper-container .swiper-button-next::before {
+        content: "\f053"; }
+    .award .swiper-container .swiper-button-prev {
+      background: none;
+      font: normal normal normal 14px/1 FontAwesome;
+      color: #ffffff;
+      font-size: 30px;
+      right: 0px; }
+      .award .swiper-container .swiper-button-prev::before {
+        content: "\f054"; }
+  .award .swiper-pagination {
+    left: 46%;
+    bottom: 0; }
+    .award .swiper-pagination .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+      margin: 0px 5px; }
+
+.about-club .swiper-container {
+  width: 80%;
+  margin: auto; }
+  .about-club .swiper-container .about-club_content {
+    background: rgba(43, 43, 48, 0.5);
+    padding: 15px; }
+    .about-club .swiper-container .about-club_content h2 {
+      color: #838383;
+      font-family: 'Cairo-Bold';
+      font-size: 22px; }

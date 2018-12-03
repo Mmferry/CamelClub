@@ -15,6 +15,7 @@ $white: #fff;
 $link-color : #333333;
 
 
+
 //== font-families
 //
 $font-path    : '../fonts';
@@ -31,29 +32,29 @@ $img-path    : '../images';
 
 /* arabic */
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Cairo';
   font-style: normal;
   font-weight: 400;
-  src: url('#{$font-path}/Lato-Regular.ttf');
+  src: url('#{$font-path}/Cairo-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Lato-Bold';
+  font-family: 'Cairo-Bold';
   font-style: normal;
   font-weight: 400;
-  src: url('#{$font-path}/Lato-Bold.ttf');
+  src: url('#{$font-path}/Cairo-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Lato-Light';
+  font-family: 'Cairo-Light';
   font-style: normal;
   font-weight: 400;
-  src: url('#{$font-path}/Lato-Light.ttf');
+  src: url('#{$font-path}/Cairo-Light.ttf');
 }
 
 
-		$font-size : 16px !default;
-		$line-height : 1.6 !default;
+$font-size : 16px !default;
+$line-height : 1.6 !default;
 
 
 //Headings size

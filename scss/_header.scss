@@ -1,0 +1,30 @@
+.header{
+    padding-top: 150px;
+    .logo{
+        //width: 460px;
+        height: 166px;
+    }
+    .navbar-nav{
+        margin-top: 70px;
+        li{
+            a:not(.sign-up){
+                font-family: 'Cairo-Bold';
+                color: #ffffff;
+                border-bottom: 2px solid transparent;
+                transition: all ease-in-out 200ms;
+                &:hover, &:focus{
+                    background-color: transparent;
+                    border-bottom: 2px solid #b88400;
+                }
+            }
+            .sign-up{
+                padding: 15px 50px;
+                border-radius: 15px;
+                font-family: 'Cairo-Bold';
+                background: #ffffff;
+                color: #606161;
+                margin-right: 30px;
+            }
+        }
+    }
+}
