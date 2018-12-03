@@ -165,3 +165,55 @@ body {
     overflow-x: hidden;
     background: #122550;
 }
+
+.vertical-nav{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    li{
+        &.active{
+            a{
+                .number{
+                    display: block;
+                    color: #ffffff;
+                    font-size: 30px;
+                    font-weight: bold;
+                    position: relative;
+                    right: -10px;
+                }
+                .word{
+                    position: relative;
+                    right: -72px;
+                    color: #dddddd;
+                }
+                .dot{
+                    width: 10px;
+                    height: 10px;
+                    background: #dddddd;
+                    right: -2px;
+                }
+                .linev{
+                    height: 50px;
+                    width: 2px;
+                    background: #dddddd;
+                    display: block;
+                    margin: 5px 1px;
+                }
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+        a{
+            .dot{
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background: gray;
+                display: inline-block;
+                position: relative;
+                right: -4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.headerbg {
+  background: url("/assets/images/headerbg.jpeg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  position: relative; }
+
+.header {
+  padding-top: 100px; }
+  .header .logo {
+    height: 85px; }
+  .header .navbar-nav {
+    margin-top: 35px; }
+    .header .navbar-nav li a:not(.contact-us) {
+      font-family: 'Cairo-Bold';
+      color: #ffffff;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: all ease-in-out 200ms;
+      -o-transition: all ease-in-out 200ms;
+      transition: all ease-in-out 200ms; }
+      .header .navbar-nav li a:not(.contact-us):hover, .header .navbar-nav li a:not(.contact-us):focus {
+        background-color: transparent;
+        border-bottom: 2px solid #b88400; }
+    .header .navbar-nav li .contact-us {
+      padding: 15px 50px;
+      border-radius: 15px;
+      font-family: 'Cairo-Bold';
+      background: #ffffff;
+      color: #606161;
+      margin-right: 60px;
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+      .header .navbar-nav li .contact-us:hover {
+        color: #ffffff;
+        background: #6589be;
+        background-image: -moz-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
+        background-image: -webkit-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
+        background-image: -ms-linear-gradient(90deg, #927cbf 0%, #6589be 100%); }

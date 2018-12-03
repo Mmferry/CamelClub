@@ -158,29 +158,82 @@ body {
   overflow-x: hidden;
   background: #122550; }
 
+.vertical-nav {
+  position: absolute;
+  top: 50%;
+  right: 8%; }
+  .vertical-nav li.active a .number {
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    right: -10px; }
+  .vertical-nav li.active a .word {
+    position: relative;
+    right: -72px;
+    color: #dddddd; }
+  .vertical-nav li.active a .dot {
+    width: 10px;
+    height: 10px;
+    background: #dddddd;
+    right: -2px; }
+  .vertical-nav li.active a .linev {
+    height: 50px;
+    width: 2px;
+    background: #dddddd;
+    display: block;
+    margin: 5px 1px; }
+  .vertical-nav li.active a:hover, .vertical-nav li.active a:focus {
+    text-decoration: none; }
+  .vertical-nav li a .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: gray;
+    display: inline-block;
+    position: relative;
+    right: -4px; }
+
+.headerbg {
+  background: url("/assets/images/headerbg.jpeg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  position: relative; }
+
 .header {
-  padding-top: 150px; }
+  padding-top: 100px; }
   .header .logo {
-    height: 166px; }
+    height: 85px; }
   .header .navbar-nav {
-    margin-top: 70px; }
-    .header .navbar-nav li a:not(.sign-up) {
+    margin-top: 35px; }
+    .header .navbar-nav li a:not(.contact-us) {
       font-family: 'Cairo-Bold';
       color: #ffffff;
       border-bottom: 2px solid transparent;
       -webkit-transition: all ease-in-out 200ms;
       -o-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
-      .header .navbar-nav li a:not(.sign-up):hover, .header .navbar-nav li a:not(.sign-up):focus {
+      .header .navbar-nav li a:not(.contact-us):hover, .header .navbar-nav li a:not(.contact-us):focus {
         background-color: transparent;
         border-bottom: 2px solid #b88400; }
-    .header .navbar-nav li .sign-up {
+    .header .navbar-nav li .contact-us {
       padding: 15px 50px;
       border-radius: 15px;
       font-family: 'Cairo-Bold';
       background: #ffffff;
       color: #606161;
-      margin-right: 30px; }
+      margin-right: 60px;
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+      .header .navbar-nav li .contact-us:hover {
+        color: #ffffff;
+        background: #6589be;
+        background-image: -moz-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
+        background-image: -webkit-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
+        background-image: -ms-linear-gradient(90deg, #927cbf 0%, #6589be 100%); }
 
 .intro .intro-logo {
   height: 500px;
@@ -288,10 +341,24 @@ body {
     left: auto; }
     .about-club .swiper-button-prev::before {
       content: "\f054"; }
+  .about-club .vertical-nav {
+    top: 20%; }
+    .about-club .vertical-nav li.active a .number {
+      color: #7784be; }
+    .about-club .vertical-nav li.active a .word {
+      right: -75px;
+      color: #7784be; }
+    .about-club .vertical-nav li.active a .dot {
+      background: #7784be; }
+    .about-club .vertical-nav li.active a .linev {
+      background: #7784be; }
+    .about-club .vertical-nav li a .dot {
+      background: #7784be; }
 
 .camel-club {
   padding-bottom: 50px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .camel-club .camel-club_title {
     color: #7290c6;
     font-size: 26px;
@@ -322,6 +389,22 @@ body {
     font-family: 'Cairo-bold'; }
   .camel-club .camel-club_breif {
     color: #a87bb7; }
+  .camel-club .vertical-nav {
+    top: 20%; }
+    .camel-club .vertical-nav li.active {
+      position: relative;
+      right: 26px; }
+      .camel-club .vertical-nav li.active a .number {
+        color: #7784be; }
+      .camel-club .vertical-nav li.active a .word {
+        right: -75px;
+        color: gray; }
+      .camel-club .vertical-nav li.active a .dot {
+        background: #7784be; }
+      .camel-club .vertical-nav li.active a .linev {
+        background: #7784be; }
+    .camel-club .vertical-nav li a .dot {
+      background: #7784be; }
 
 #fp-nav ul li a span {
   color: #ffffff; }
@@ -341,6 +424,7 @@ body {
   .registertion .registertion-btn {
     color: #fff;
     border-radius: 3px;
+    background: #6589be;
     background-image: -moz-linear-gradient(-27deg, #927cbf 0%, #6589be 82%);
     background-image: -webkit-linear-gradient(-27deg, #927cbf 0%, #6589be 82%);
     background-image: -ms-linear-gradient(-27deg, #927cbf 0%, #6589be 82%);
@@ -349,10 +433,17 @@ body {
     line-height: 42px;
     position: absolute;
     bottom: 10%;
-    font-family: 'Cairo-Bold'; }
+    font-family: 'Cairo-Bold';
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .registertion .registertion-btn:hover {
+      background: #6589be; }
 
 footer {
-  background-color: #333; }
+  background: url("/assets/images/footer.jpeg") no-repeat;
+  background-position: inherit;
+  position: relative; }
 
 .footer .map {
   position: relative; }
@@ -389,9 +480,15 @@ footer .form textarea {
   padding-top: 10px; }
 
 footer .form .btn {
+  background: #6589be;
   background-image: -moz-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
   background-image: -webkit-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
-  background-image: -ms-linear-gradient(90deg, #927cbf 0%, #6589be 100%); }
+  background-image: -ms-linear-gradient(90deg, #927cbf 0%, #6589be 100%);
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  footer .form .btn:hover {
+    background: #6589be; }
 
 footer .send {
   text-align: left;
@@ -417,8 +514,8 @@ footer .contact_us .title span {
   color: #927cbf; }
 
 footer .contact_us .title span::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 100%;
   left: 0px;
   width: 300px;
@@ -463,5 +560,27 @@ footer .footer_logo {
 
 footer .footer_logo > img {
   width: 100%; }
+
+.eventsbg {
+  background: url("/assets/images/eventsbg.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
+footer .vertical-nav {
+  top: 20%;
+  left: 3%;
+  right: auto; }
+  footer .vertical-nav li.active a .number {
+    color: #dddddd; }
+  footer .vertical-nav li.active a .word {
+    right: -85px;
+    color: #dddddd; }
+  footer .vertical-nav li.active a .dot {
+    background: #dddddd; }
+  footer .vertical-nav li.active a .linev {
+    background: #dddddd; }
+  footer .vertical-nav li a .dot {
+    background: #dddddd; }
 
 /*# sourceMappingURL=main.css.map */
