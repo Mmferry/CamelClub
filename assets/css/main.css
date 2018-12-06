@@ -51,102 +51,6 @@
     background: rgba(141, 110, 99, 0.8);
     color: #fff !important; }
 
-.checkbox [type=checkbox]:checked,
-.checkbox [type=checkbox]:not(:checked) {
-  display: none;
-  position: absolute;
-  left: 24px; }
-
-.checkbox [type=checkbox]:checked + label,
-.checkbox [type=checkbox]:not(:checked) + label {
-  position: relative;
-  padding-left: 28px;
-  cursor: pointer;
-  line-height: 2.1rem;
-  display: inline-block;
-  color: #fff;
-  padding-right: 0; }
-
-.checkbox [type=checkbox]:checked + label:before,
-.checkbox [type=checkbox]:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2.1rem;
-  height: 2.1rem;
-  border: 1px solid #d1d1d1;
-  background: #fff;
-  border-radius: 0.5rem; }
-
-.checkbox [type=checkbox]:checked + label:after,
-.checkbox [type=checkbox]:not(:checked) + label:after {
-  content: " ";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0.3rem;
-  background: #8d6e63;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
-
-.checkbox [type=checkbox]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0); }
-
-.checkbox [type=checkbox]:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-
-.checkbox label {
-  padding-right: 35px;
-  color: #fff; }
-
-.checkbox [type=checkbox]:checked + label.disabled:before,
-.checkbox [type=checkbox]:not(:checked) + label.disabled:before {
-  cursor: not-allowed;
-  background: #ececec; }
-
-.select {
-  position: relative;
-  display: inline-block; }
-  .select:after {
-    content: "\f0d7";
-    position: absolute;
-    width: 16px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 7px;
-    right: 0px;
-    bottom: 10px;
-    border-radius: 3px;
-    pointer-events: none;
-    z-index: 2;
-    font: normal normal normal 14px/1 FontAwesome; }
-  .select select {
-    position: relative;
-    width: 110px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: #795548;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    padding: 6px 10px;
-    margin: 0;
-    cursor: pointer; }
-    .select select::-ms-expand {
-      display: none; }
-
 .icon-btn {
   border: 0;
   background: transparent; }
@@ -196,7 +100,7 @@ body {
     right: -4px; }
 
 .headerbg {
-  background: url("/assets/images/headerbg.jpeg") no-repeat;
+  background: url("../images/headerbg.jpeg") no-repeat;
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;
@@ -441,7 +345,7 @@ body {
       background: #6589be; }
 
 footer {
-  background: url("/assets/images/footer.jpeg") no-repeat;
+  background: url("../images/footer.jpeg") no-repeat;
   background-position: inherit;
   position: relative; }
 
@@ -562,7 +466,7 @@ footer .footer_logo > img {
   width: 100%; }
 
 .eventsbg {
-  background: url("/assets/images/eventsbg.jpeg") no-repeat;
+  background: url("../images/eventsbg.jpeg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
@@ -582,5 +486,3 @@ footer .vertical-nav {
     background: #dddddd; }
   footer .vertical-nav li a .dot {
     background: #dddddd; }
-
-/*# sourceMappingURL=main.css.map */

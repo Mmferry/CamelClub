@@ -1,5 +1,5 @@
 .headerbg {
-  background: url("/assets/images/headerbg.jpeg") no-repeat;
+  background: url("../images/headerbg.jpeg") no-repeat;
   background-size: cover;
   background-position: right center;
   background-attachment: fixed;
